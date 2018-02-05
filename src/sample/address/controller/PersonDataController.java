@@ -164,7 +164,7 @@ public class PersonDataController {
     }
 
     public void writeToFile(ObservableList<Person> persons, String file)throws IOException{
-        FileWriter fout = new FileWriter(FILE);
+        FileWriter fout = new FileWriter(file);
         for (Person p:persons) {
             fout.write(p.toString()+"\r\n");
         }

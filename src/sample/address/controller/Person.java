@@ -3,7 +3,6 @@ package sample.address.controller;
 import javafx.beans.property.SimpleStringProperty;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,14 +16,12 @@ public class Person {
     private final SimpleStringProperty name;
     private final SimpleStringProperty surname;
     private final SimpleStringProperty phone;
-    private static FileWriter filewriter;
 
     public Person(String name, String surname, String phone) {
         this.name = new SimpleStringProperty(name);
         this.surname = new SimpleStringProperty(surname);
         this.phone = new SimpleStringProperty(phone);
     }
-
     public Person(){
         this.name = new SimpleStringProperty();
         this.surname = new SimpleStringProperty();

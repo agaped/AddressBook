@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/address/controller/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/Test.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/Person.class" afterPath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/Person.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/PersonDataController.class" afterPath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/PersonDataController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/PersonList" afterPath="$PROJECT_DIR$/out/production/AddressBook/sample/address/controller/PersonList" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/address/Main.java" afterPath="$PROJECT_DIR$/src/sample/address/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/address/controller/Person.java" afterPath="$PROJECT_DIR$/src/sample/address/controller/Person.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java" afterPath="$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/address/controller/PersonList" afterPath="$PROJECT_DIR$/src/sample/address/controller/PersonList" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml" afterPath="$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/address/view/style.css" afterPath="$PROJECT_DIR$/src/sample/address/view/style.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,36 +68,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="PersonDetails.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PersonDetails.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="325">
               <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
-                <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
                 <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
                 <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-                <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
               </folding>
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/address/view/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="375">
               <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
@@ -108,11 +97,9 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -120,8 +107,8 @@
       <file leaf-file-name="PersonDataController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="169" column="9" lean-forward="true" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
+            <state relative-caret-position="3825">
+              <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="45" />
+            <state relative-caret-position="599">
+              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,13 +159,13 @@
         <option value="$PROJECT_DIR$/src/sample/address/view/RootLayout.fxml" />
         <option value="$PROJECT_DIR$/src/sample/address/controller/PersonData.java" />
         <option value="$PROJECT_DIR$/src/sample/address/controller/PersonList.java" />
-        <option value="$PROJECT_DIR$/src/sample/address/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/address/controller/Test.java" />
-        <option value="$PROJECT_DIR$/src/sample/address/controller/PersonList" />
-        <option value="$PROJECT_DIR$/src/sample/address/controller/Person.java" />
-        <option value="$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java" />
         <option value="$PROJECT_DIR$/src/sample/address/view/style.css" />
         <option value="$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/address/controller/PersonList" />
+        <option value="$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java" />
+        <option value="$PROJECT_DIR$/src/sample/address/controller/Person.java" />
+        <option value="$PROJECT_DIR$/src/sample/address/Main.java" />
       </list>
     </option>
   </component>
@@ -208,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,10 +232,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,11 +425,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26403823" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -453,7 +440,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17567568" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17891891" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -468,6 +455,7 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26403823" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -528,27 +516,67 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
             <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
             <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/view/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4100">
+          <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
+            <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/style.css">
@@ -563,9 +591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,14 +605,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -598,27 +617,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
             <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
             <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/style.css">
@@ -633,9 +642,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -649,14 +656,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -668,27 +668,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
             <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
             <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/style.css">
@@ -703,9 +693,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,14 +707,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -738,36 +719,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="82" lean-forward="false" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
           <folding>
-            <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
             <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
             <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -792,27 +761,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
             <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
             <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
           </folding>
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
@@ -844,80 +803,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/PersonList">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="100">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/controller/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/PersonList">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="100">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="169" column="9" lean-forward="true" selection-start-line="169" selection-start-column="9" selection-end-line="169" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="375">
           <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/address/view/PersonDetails.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <marker date="1517859363111" expanded="true" signature="704:3659" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="718:3497" ph="..." />
             <marker date="1517859363111" expanded="true" signature="840:1281" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="883:1135" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1165:1262" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="1987:2491" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2005:2472" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2935:3010" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="2951:3001" ph="..." />
             <marker date="1517859363111" expanded="true" signature="3010:3497" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3515:3551" ph="..." />
-            <marker date="1517859363111" expanded="true" signature="3564:3645" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/controller/PersonDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/address/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
