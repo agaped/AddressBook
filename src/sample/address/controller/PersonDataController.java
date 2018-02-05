@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -74,41 +73,45 @@ public class PersonDataController {
 
     @FXML
     public void addPerson() throws IOException{
-        person=new Person(nameText.getText(),surnameText.getText(),phoneText.getText());
-        persons.add(person);
-        write(persons,FILE);
+        if(!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
+            person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
+            persons.add(person);
+            write(persons, FILE);
 
-        printPersons();
-
-        nameText.clear();
-        surnameText.clear();
-        phoneText.clear();
+            nameText.clear();
+            surnameText.clear();
+            phoneText.clear();
+        }else return;
     }
 
     @FXML
-    public void deletePerson(){
+    public void deletePerson() throws IOException{
         persons.remove(personTable.getSelectionModel().getSelectedItem());
-
-        printPersons();
+        write(persons,FILE);
     }
+
     @FXML
     public void updatePerson(){
-        person=personTable.getSelectionModel().getSelectedItem();
-        index=persons.indexOf(person);
-        nameText.setText(person.getName());
-        surnameText.setText(person.getSurname());
-        phoneText.setText(person.getPhone());
+        if(personTable.getSelectionModel().getSelectedItem()!=null) {
+            person = personTable.getSelectionModel().getSelectedItem();
+            index = persons.indexOf(person);
+            nameText.setText(person.getName());
+            surnameText.setText(person.getSurname());
+            phoneText.setText(person.getPhone());
 
-        addButton.setVisible(false);
-        deleteButton.setVisible(false);
-        saveButton.setVisible(true);
-        discardButton.setVisible(true);
+            addButton.setVisible(false);
+            deleteButton.setVisible(false);
+            saveButton.setVisible(true);
+            discardButton.setVisible(true);
+        }else return;
+
     }
     @FXML
-    public void savePerson(){
+    public void savePerson()throws IOException{
         person=new Person(nameText.getText(),surnameText.getText(),phoneText.getText());
         persons.set(index,person);
 
+        write(persons,FILE);
         discardPerson();
     }
     @FXML
@@ -121,12 +124,6 @@ public class PersonDataController {
         nameText.clear();
         surnameText.clear();
         phoneText.clear();
-    }
-
-    public void printPersons(){
-        for (Person p:persons) {
-            System.out.println(p);
-        }
     }
 
     public void write(ObservableList<Person> persons, String file)throws IOException{

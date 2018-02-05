@@ -3,7 +3,6 @@ package sample.address.controller;
 import javafx.beans.property.SimpleStringProperty;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -90,15 +89,6 @@ public class Person {
         }
         return (ArrayList<Person>) arrayList;
     }
-
-    public static void write(ArrayList<Person> arrayList, String file)throws IOException{
-        FileWriter fout = new FileWriter(file);
-        for (Person p:arrayList) {
-            fout.write(p.toString()+"\r\n");
-        }
-        fout.close();
-    }
-
 
 }
 
