@@ -10,6 +10,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by agaped on 01.02.2018.
@@ -31,6 +33,8 @@ public class PersonDataController {
     Label surnameLabel;
     @FXML
     Label phoneLabel;
+    @FXML
+    Label warningLabel;
 
     @FXML
     TextField nameText;
@@ -54,6 +58,9 @@ public class PersonDataController {
     private Person person;
     int index=0;
     static final String FILE = "C:\\Users\\Agunia\\Desktop\\AddressBook\\src\\sample\\address\\controller\\PersonList";
+    Pattern patternName = Pattern.compile("[A-Z][a-z]{1,}");
+    Pattern patternPhone=Pattern.compile("[0-9]{3}-[0-9]{3}-[0-9]{3}");
+
 
     @FXML
     public void initialize() throws IOException {
@@ -69,25 +76,39 @@ public class PersonDataController {
 
         saveButton.setVisible(false);
         discardButton.setVisible(false);
+        warningLabel.setVisible(false);
     }
 
     @FXML
     public void addPerson() throws IOException{
         if(!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
-            person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
-            persons.add(person);
-            write(persons, FILE);
+            Matcher matcherName = patternName.matcher(nameText.getText());
+            Matcher matcherSurname = patternName.matcher(surnameText.getText());
+            Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
+            if(matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
+                person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
+                persons.add(person);
+                writeToFile(persons, FILE);
 
-            nameText.clear();
-            surnameText.clear();
-            phoneText.clear();
-        }else return;
+                nameText.clear();
+                surnameText.clear();
+                phoneText.clear();
+
+                warningLabel.setVisible(false);
+            }else {
+                warningLabel.setVisible(true);
+                warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
+            }
+        }else{
+            warningLabel.setVisible(true);
+            warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
+        }
     }
 
     @FXML
     public void deletePerson() throws IOException{
         persons.remove(personTable.getSelectionModel().getSelectedItem());
-        write(persons,FILE);
+        writeToFile(persons,FILE);
     }
 
     @FXML
@@ -108,11 +129,25 @@ public class PersonDataController {
     }
     @FXML
     public void savePerson()throws IOException{
-        person=new Person(nameText.getText(),surnameText.getText(),phoneText.getText());
-        persons.set(index,person);
+        if(!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
+            Matcher matcherName = patternName.matcher(nameText.getText());
+            Matcher matcherSurname = patternName.matcher(surnameText.getText());
+            Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
+            if(matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
+                person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
+                persons.set(index, person);
 
-        write(persons,FILE);
-        discardPerson();
+                writeToFile(persons, FILE);
+                discardPerson();
+                warningLabel.setVisible(false);
+            }else{
+                warningLabel.setVisible(true);
+                warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
+            }
+        }else{
+            warningLabel.setVisible(true);
+            warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
+        }
     }
     @FXML
     public void discardPerson(){
@@ -124,9 +159,11 @@ public class PersonDataController {
         nameText.clear();
         surnameText.clear();
         phoneText.clear();
+
+        warningLabel.setVisible(false);
     }
 
-    public void write(ObservableList<Person> persons, String file)throws IOException{
+    public void writeToFile(ObservableList<Person> persons, String file)throws IOException{
         FileWriter fout = new FileWriter(FILE);
         for (Person p:persons) {
             fout.write(p.toString()+"\r\n");

@@ -71,12 +71,6 @@ public class Person {
         return getName()+" "+getSurname()+" "+getPhone();
     }
 
-    public void writeToFile(String file) throws IOException{
-        FileWriter fout = new FileWriter(file);
-        fout.write(toString()+"\n");
-        fout.close();
-    }
-
     public ArrayList<Person> readFromFile(String file) throws IOException{
         List<Person> arrayList = new ArrayList<>();
         File f = new File(file);

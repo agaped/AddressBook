@@ -1,5 +1,6 @@
 .anchorPane{
     -fx-background-image:url("background1.jpeg");
+    /*https://www.pexels.com/photo/down-angle-photography-of-red-clouds-and-blue-sky-844297/*/
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover;
     -fx-background-position:center;
@@ -9,6 +10,10 @@
     -fx-font-weight: bold;
     -fx-font-size:16px;
     -fx-font-family:"Harlow Solid Italic";
+}
+.warningLabel{
+    -fx-font-weight: none;
+    -fx-background-color: #497aa2;
 }
 .textField{
     -fx-background-color: linear-gradient(#d9a7c7, #fee3c5);
