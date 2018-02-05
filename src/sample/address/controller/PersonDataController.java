@@ -6,6 +6,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,12 +54,13 @@ public class PersonDataController {
     private ObservableList<Person> persons;
     private Person person;
     int index=0;
+    static final String FILE = "C:\\Users\\Agunia\\Desktop\\AddressBook\\src\\sample\\address\\controller\\PersonList";
 
     @FXML
-    public void initialize() {
+    public void initialize() throws IOException {
+        Person person=new Person();
         List<Person> arrayList = new ArrayList<>();
-        arrayList.add(new Person("Hans", "Zimmer","500 230 300"));
-        arrayList.add(new Person("Hans", "Zimmer","600 230 300"));
+        arrayList=person.readFromFile(FILE);
         persons= FXCollections.observableArrayList(arrayList);
 
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -66,13 +70,13 @@ public class PersonDataController {
 
         saveButton.setVisible(false);
         discardButton.setVisible(false);
-
     }
 
     @FXML
-    public void addPerson(){
+    public void addPerson() throws IOException{
         person=new Person(nameText.getText(),surnameText.getText(),phoneText.getText());
         persons.add(person);
+        write(persons,FILE);
 
         printPersons();
 
@@ -124,4 +128,14 @@ public class PersonDataController {
             System.out.println(p);
         }
     }
+
+    public void write(ObservableList<Person> persons, String file)throws IOException{
+        FileWriter fout = new FileWriter(FILE);
+        for (Person p:persons) {
+            fout.write(p.toString()+"\r\n");
+        }
+        fout.close();
+    }
+
+
 }

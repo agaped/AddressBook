@@ -19,18 +19,14 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    private Stage primaryStage;
-    private BorderPane rootLayout;
-    private ObservableList<Person> personData = FXCollections.observableArrayList();
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         launch(args);
     }
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("view/PersonDetails.fxml"));
         primaryStage.setTitle("Address Book");
-        Scene scene=new Scene(root, 400, 400);
+        Scene scene=new Scene(root, 450, 500);
         primaryStage.setScene(scene);
         //File f = new File("src/sample/view/javafx.css");
         //scene.getStylesheets().add("file:///" + f.getAbsolutePath().replace("\\", "/"));
