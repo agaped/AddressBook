@@ -22,11 +22,13 @@ public class Person {
         this.surname = new SimpleStringProperty(surname);
         this.phone = new SimpleStringProperty(phone);
     }
-    public Person(){
+
+    public Person() {
         this.name = new SimpleStringProperty();
         this.surname = new SimpleStringProperty();
         this.phone = new SimpleStringProperty();
     }
+
     public String getName() {
         return name.get();
     }
@@ -64,19 +66,19 @@ public class Person {
     }
 
     @Override
-    public String toString(){
-        return getName()+" "+getSurname()+" "+getPhone();
+    public String toString() {
+        return getName() + " " + getSurname() + " " + getPhone();
     }
 
-    public ArrayList<Person> readFromFile(String file) throws IOException{
+    public ArrayList<Person> readFromFile(String file) throws IOException {
         List<Person> arrayList = new ArrayList<>();
         File f = new File(file);
         Scanner fin = new Scanner(f);
-        while(fin.hasNext()) {
-            String n=fin.next();
-            String s=fin.next();
-            String p=fin.next();
-            arrayList.add(new Person(n,s,p));
+        while (fin.hasNext()) {
+            String n = fin.next();
+            String s = fin.next();
+            String p = fin.next();
+            arrayList.add(new Person(n, s, p));
         }
         return (ArrayList<Person>) arrayList;
     }

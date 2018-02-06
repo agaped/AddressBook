@@ -16,11 +16,12 @@ public class Main extends Application {
     public static void main(String[] args) throws IOException {
         launch(args);
     }
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view/PersonDetails.fxml"));
         primaryStage.setTitle("Address Book");
-        Scene scene=new Scene(root, 450, 500);
+        Scene scene = new Scene(root, 450, 500);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

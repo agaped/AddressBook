@@ -56,18 +56,18 @@ public class PersonDataController {
 
     private ObservableList<Person> persons;
     private Person person;
-    int index=0;
-    static final String FILE = "C:\\Users\\Agunia\\Desktop\\AddressBook\\src\\sample\\address\\controller\\PersonList";
+    int index = 0;
+    static final String FILE = "src\\sample\\address\\controller\\PersonList";
     Pattern patternName = Pattern.compile("[A-Z][a-z]{1,}");
-    Pattern patternPhone=Pattern.compile("[0-9]{3}-[0-9]{3}-[0-9]{3}");
+    Pattern patternPhone = Pattern.compile("[0-9]{3}-[0-9]{3}-[0-9]{3}");
 
 
     @FXML
     public void initialize() throws IOException {
-        Person person=new Person();
+        Person person = new Person();
         List<Person> arrayList = new ArrayList<>();
-        arrayList=person.readFromFile(FILE);
-        persons= FXCollections.observableArrayList(arrayList);
+        arrayList = person.readFromFile(FILE);
+        persons = FXCollections.observableArrayList(arrayList);
 
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         surnameColumn.setCellValueFactory(new PropertyValueFactory<>("surname"));
@@ -80,12 +80,12 @@ public class PersonDataController {
     }
 
     @FXML
-    public void addPerson() throws IOException{
-        if(!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
+    public void addPerson() throws IOException {
+        if (!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
             Matcher matcherName = patternName.matcher(nameText.getText());
             Matcher matcherSurname = patternName.matcher(surnameText.getText());
             Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
-            if(matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
+            if (matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
                 person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
                 persons.add(person);
                 writeToFile(persons, FILE);
@@ -95,25 +95,25 @@ public class PersonDataController {
                 phoneText.clear();
 
                 warningLabel.setVisible(false);
-            }else {
+            } else {
                 warningLabel.setVisible(true);
                 warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
             }
-        }else{
+        } else {
             warningLabel.setVisible(true);
             warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
         }
     }
 
     @FXML
-    public void deletePerson() throws IOException{
+    public void deletePerson() throws IOException {
         persons.remove(personTable.getSelectionModel().getSelectedItem());
-        writeToFile(persons,FILE);
+        writeToFile(persons, FILE);
     }
 
     @FXML
-    public void updatePerson(){
-        if(personTable.getSelectionModel().getSelectedItem()!=null) {
+    public void updatePerson() {
+        if (personTable.getSelectionModel().getSelectedItem() != null) {
             person = personTable.getSelectionModel().getSelectedItem();
             index = persons.indexOf(person);
             nameText.setText(person.getName());
@@ -124,33 +124,35 @@ public class PersonDataController {
             deleteButton.setVisible(false);
             saveButton.setVisible(true);
             discardButton.setVisible(true);
-        }else return;
+        } else return;
 
     }
+
     @FXML
-    public void savePerson()throws IOException{
-        if(!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
+    public void savePerson() throws IOException {
+        if (!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
             Matcher matcherName = patternName.matcher(nameText.getText());
             Matcher matcherSurname = patternName.matcher(surnameText.getText());
             Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
-            if(matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
+            if (matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
                 person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
                 persons.set(index, person);
 
                 writeToFile(persons, FILE);
                 discardPerson();
                 warningLabel.setVisible(false);
-            }else{
+            } else {
                 warningLabel.setVisible(true);
                 warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
             }
-        }else{
+        } else {
             warningLabel.setVisible(true);
             warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
         }
     }
+
     @FXML
-    public void discardPerson(){
+    public void discardPerson() {
         addButton.setVisible(true);
         deleteButton.setVisible(true);
         saveButton.setVisible(false);
@@ -163,10 +165,10 @@ public class PersonDataController {
         warningLabel.setVisible(false);
     }
 
-    public void writeToFile(ObservableList<Person> persons, String file)throws IOException{
+    public void writeToFile(ObservableList<Person> persons, String file) throws IOException {
         FileWriter fout = new FileWriter(file);
-        for (Person p:persons) {
-            fout.write(p.toString()+"\r\n");
+        for (Person p : persons) {
+            fout.write(p.toString() + "\r\n");
         }
         fout.close();
     }
