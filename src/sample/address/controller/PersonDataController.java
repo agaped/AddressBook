@@ -6,8 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -63,46 +63,58 @@ public class PersonDataController {
 
 
     @FXML
-    public void initialize() throws IOException {
-        List<Person> arrayList = FileManager.readFromFile(FILE);
-        persons = FXCollections.observableArrayList(arrayList);
+    public void initialize(){
+        try {
+            List<Person> arrayList = FileManager.readFromFile(FILE);
+            persons = FXCollections.observableArrayList(arrayList);
 
-        nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        surnameColumn.setCellValueFactory(new PropertyValueFactory<>("surname"));
-        phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
-        personTable.setItems(persons);
+            nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+            surnameColumn.setCellValueFactory(new PropertyValueFactory<>("surname"));
+            phoneColumn.setCellValueFactory(new PropertyValueFactory<>("phone"));
+            personTable.setItems(persons);
 
-        saveButton.setVisible(false);
-        discardButton.setVisible(false);
-        warningLabel.setVisible(false);
-    }
-
-    @FXML
-    public void addPerson() throws IOException {
-        if (!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
-            Matcher matcherName = patternName.matcher(nameText.getText());
-            Matcher matcherSurname = patternSurname.matcher(surnameText.getText());
-            Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
-            if (matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
-                person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
-                persons.add(person);
-                FileManager.writeToFile(persons, FILE);
-
-                clearTextField();
-
-                warningLabel.setVisible(false);
-            } else {
-                showWarning();
-            }
-        } else {
-            showWarning();
+            saveButton.setVisible(false);
+            discardButton.setVisible(false);
+            warningLabel.setVisible(false);
+        }catch(FileNotFoundException e){
+            showWarning("File not found");
         }
     }
 
     @FXML
-    public void deletePerson() throws IOException {
-        persons.remove(personTable.getSelectionModel().getSelectedItem());
-        FileManager.writeToFile(persons, FILE);
+    public void addPerson(){
+        try {
+            if (!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
+                Matcher matcherName = patternName.matcher(nameText.getText());
+                Matcher matcherSurname = patternSurname.matcher(surnameText.getText());
+                Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
+                if (matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
+                    person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
+                    persons.add(person);
+                    FileManager.writeToFile(persons, FILE);
+
+                    clearTextField();
+
+                    warningLabel.setVisible(false);
+                } else {
+                    showWarning("Wrong data format: Jan Kowalski 560-768-987");
+                }
+            } else {
+                showWarning("Wrong data format: Jan Kowalski 560-768-987");
+            }
+        }catch(IOException  e){
+            showWarning("Problem with writing to file");
+        }
+    }
+
+    @FXML
+    public void deletePerson(){
+        try {
+            persons.remove(personTable.getSelectionModel().getSelectedItem());
+            FileManager.writeToFile(persons, FILE);
+        }catch(IOException e){
+            showWarning("Problem with writing to file");
+        }
     }
 
     @FXML
@@ -123,23 +135,27 @@ public class PersonDataController {
     }
 
     @FXML
-    public void savePerson() throws IOException {
-        if (!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
-            Matcher matcherName = patternName.matcher(nameText.getText());
-            Matcher matcherSurname = patternSurname.matcher(surnameText.getText());
-            Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
-            if (matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
-                person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
-                persons.set(index, person);
+    public void savePerson() {
+        try{
+            if (!nameText.getText().isEmpty() && !surnameText.getText().isEmpty() && !phoneText.getText().isEmpty()) {
+                Matcher matcherName = patternName.matcher(nameText.getText());
+                Matcher matcherSurname = patternSurname.matcher(surnameText.getText());
+                Matcher matcherPhone = patternPhone.matcher(phoneText.getText());
+                if (matcherName.matches() && matcherSurname.matches() && matcherPhone.matches()) {
+                    person = new Person(nameText.getText(), surnameText.getText(), phoneText.getText());
+                    persons.set(index, person);
 
-                FileManager.writeToFile(persons, FILE);
-                discardPerson();
-                warningLabel.setVisible(false);
+                    FileManager.writeToFile(persons, FILE);
+                    discardPerson();
+                    warningLabel.setVisible(false);
+                } else {
+                    showWarning("Wrong data format: Jan Kowalski 560-768-987");
+                }
             } else {
-                showWarning();
+                showWarning("Wrong data format: Jan Kowalski 560-768-987");
             }
-        } else {
-            showWarning();
+        }catch(IOException e){
+            showWarning("Problem with writing to file");
         }
     }
 
@@ -154,9 +170,9 @@ public class PersonDataController {
 
         warningLabel.setVisible(false);
     }
-    public void showWarning(){
+    public void showWarning(String text){
         warningLabel.setVisible(true);
-        warningLabel.setText("Wrong data format: Jan Kowalski 560-768-987");
+        warningLabel.setText(text);
     }
     public void clearTextField(){
         nameText.clear();

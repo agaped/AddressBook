@@ -17,35 +17,17 @@ public class Person {
         this.phone = new SimpleStringProperty(phone);
     }
 
-    public Person() {
-        this.name = new SimpleStringProperty();
-        this.surname = new SimpleStringProperty();
-        this.phone = new SimpleStringProperty();
-    }
-
     public String getName() {
         return name.get();
     }
-
-//    public SimpleStringProperty nameProperty() {
-//        return name;
-//    }
 
     public String getSurname() {
         return surname.get();
     }
 
-//    public SimpleStringProperty surnameProperty() {
-//        return surname;
-//    }
-
     public String getPhone() {
         return phone.get();
     }
-
-//    public SimpleStringProperty phoneProperty() {
-//        return phone;
-//    }
 
     @Override
     public String toString() {

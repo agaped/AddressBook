@@ -13,12 +13,12 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("view/PersonDetails.fxml"));
         primaryStage.setTitle("Address Book");
         Scene scene = new Scene(root, 450, 500);

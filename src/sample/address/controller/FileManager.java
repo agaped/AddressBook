@@ -3,6 +3,7 @@ package sample.address.controller;
 import javafx.collections.ObservableList;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ import java.util.Scanner;
  */
 public class FileManager {
 
-    public static ArrayList<Person> readFromFile(String file) throws IOException {
+    public static ArrayList<Person> readFromFile(String file) throws FileNotFoundException {
         List<Person> arrayList = new ArrayList<>();
         File f = new File(file);
         Scanner fin = new Scanner(f);
