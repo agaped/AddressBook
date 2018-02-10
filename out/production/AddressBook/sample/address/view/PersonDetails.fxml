@@ -107,7 +107,7 @@
                   <Insets bottom="5.0" left="10.0" right="10.0" />
                </VBox.margin>
             </TableView>
-            <Label fx:id="warningLabel" alignment="CENTER" contentDisplay="CENTER" styleClass="warningLabel" stylesheets="@style.css" textAlignment="CENTER">
+            <Label fx:id="warningLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="453.0" styleClass="warningLabel" stylesheets="@style.css" textAlignment="CENTER">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
